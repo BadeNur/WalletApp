@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gravity_register"
+    android:orientation="vertical"
+    tools:context=".ui.RegActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="398dp"
+        android:layout_height="126dp"
+        android:background="@drawable/bg_header_register"
+        app:layout_constraintEnd_toEndOf="@+id/etKullanici"
+        app:layout_constraintStart_toStartOf="@+id/etKullanici"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etKullanici"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_input_login"
+        android:hint="Kullanıcı Adı"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/etMail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/etMail"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_input_login"
+        android:hint="E-posta"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/etParola"
+        app:layout_constraintEnd_toEndOf="@+id/etParola"
+        app:layout_constraintStart_toStartOf="@+id/etParola"
+        app:layout_constraintTop_toBottomOf="@+id/etKullanici" />
+
+    <EditText
+        android:id="@+id/etParola"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_input_login"
+        android:hint="Parola"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/etParolaYeniden"
+        app:layout_constraintEnd_toEndOf="@+id/etParolaYeniden"
+        app:layout_constraintStart_toStartOf="@+id/etParolaYeniden"
+        app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+    <EditText
+        android:id="@+id/etParolaYeniden"
+        android:layout_width="295dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_input_login"
+        android:hint="Parola Tekrar"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/btnKayit"
+        app:layout_constraintEnd_toEndOf="@+id/btnKayit"
+        app:layout_constraintStart_toStartOf="@+id/btnKayit"
+        app:layout_constraintTop_toBottomOf="@+id/etParola" />
+
+    <Button
+        android:id="@+id/btnKayit"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="263dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:text="Kayıt Ol"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvGirisYap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etParolaYeniden" />
+
+    <TextView
+        android:id="@+id/tvGirisYap"
+        android:layout_width="268dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="50dp"
+        android:text="Zaten üye misin? Giriş Yap"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnKayit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnKayit"
+        app:layout_constraintTop_toBottomOf="@+id/btnKayit"
+        tools:ignore="NotSibling" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
